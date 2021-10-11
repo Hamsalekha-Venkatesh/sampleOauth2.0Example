@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/hamsa_db?createDatabaseIfNotExists=true
+    username: "root"
+    password: "Hamsa12345"
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

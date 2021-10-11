@@ -1,0 +1,15 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+# time out after which I should fail when the service does not return back.
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timroutInMilliseconds: 5000
+
